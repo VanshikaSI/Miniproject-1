@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Website</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="teachers.html">Home</a></li>
+        <li><a href="Accounts.html">Account</a></li>
+        <li><a href="teach A.html">Administration</a></li>
+        <li><a href="#contact">Community</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="profile">
+          <img src="images/profile-image.jpg" alt="Profile Image" />
+          <h3>SIYA</h3>
+        </div>
+        <ul>
+          <li><a href="#account" class="active">Account</a></li>
+          <li><a href="#password">Password</a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Account Settings -->
+        <div id="account" class="settings-content active">
+          <h2>Account Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" placeholder="SIYA DAS" />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" placeholder="DAS" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="vudung92@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="9876543215" />
+            </div>
+            <div class="form-group">
+              <label for="company">Department</label>
+              <input type="text" id="company" placeholder="Computer" />
+            </div>
+            <div class="form-group">
+              <label for="designation">Designation</label>
+              <input type="text" id="designation" value="HOD" />
+            </div>
+            <div class="form-group">
+              <label for="bio">Bio</label>
+              <textarea id="bio">
+Lorem ipsum dolor sit amet consectetur.</textarea
+              >
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Password Settings -->
+        <div id="password" class="settings-content">
+          <h2>Password Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="old-password">Old Password</label>
+              <input type="password" id="old-password" />
+            </div>
+            <div class="form-group">
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm New Password</label>
+              <input type="password" id="confirm-password" />
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

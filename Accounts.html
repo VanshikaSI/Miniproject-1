@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Website</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Accounts.html">Account</a></li>
+
+        <li><a href="#contact">Community</a></li>
+        <li><a href="Connect.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="profile">
+          <img src="images/profile-image.jpg" alt="Profile Image" />
+          <h3>SIYA</h3>
+        </div>
+        <ul>
+          <li><a href="#account" class="active">Account</a></li>
+          <li><a href="#password">Password</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#application">Application</a></li>
+          <li><a href="#notification">Notification</a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Account Settings -->
+        <div id="account" class="settings-content active">
+          <h2>Account Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" value="SIYA DAS" />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" value="DAS" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" value="vudung92@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" value="9876543215" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" value="OCC" />
+            </div>
+            <div class="form-group">
+              <label for="designation">Designation</label>
+              <input type="text" id="designation" value="UI Developer" />
+            </div>
+            <div class="form-group">
+              <label for="bio">Bio</label>
+              <textarea id="bio">
+Lorem ipsum dolor sit amet consectetur.</textarea
+              >
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Password Settings -->
+        <div id="password" class="settings-content">
+          <h2>Password Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="old-password">Old Password</label>
+              <input type="password" id="old-password" />
+            </div>
+            <div class="form-group">
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm New Password</label>
+              <input type="password" id="confirm-password" />
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Security Settings -->
+        <div id="security" class="settings-content">
+          <h2>Security Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="login">Login</label>
+              <input type="text" id="login" />
+            </div>
+            <div class="form-group">
+              <label for="2fa">Two-Factor Authentication</label>
+              <input type="text" id="2fa" />
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Application Settings -->
+        <div id="application" class="settings-content">
+          <h2>Application Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="app-settings">App Preferences</label>
+              <textarea id="app-settings">
+Lorem ipsum dolor sit amet consectetur.</textarea
+              >
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Notification Settings -->
+        <div id="notification" class="settings-content">
+          <h2>Notification Settings</h2>
+          <form>
+            <div class="form-group">
+              <label for="email-notifications">Email Notifications</label>
+              <input type="checkbox" id="email-notifications" />
+            </div>
+            <div class="form-actions">
+              <button class="btn update" type="submit">Update</button>
+              <button class="btn cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
